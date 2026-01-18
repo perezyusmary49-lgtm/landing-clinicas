@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Captación para Clínicas Dentales</title>
+    <meta name="description"
+        content="Analizamos tu Instagram y proceso de agendado para decirte dónde pierdes pacientes. Diagnóstico gratuito.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container hero-content">
+            <img src="images/logo.jpg" alt="Logo Clínica" class="logo">
+
+            <h1 class="hero-title">
+                Captación de pacientes para clínicas dentales<br>
+                sin perder mensajes ni citas
+            </h1>
+
+            <p class="hero-subtitle">
+                Analizamos tu Instagram, mensajes y proceso de agendado y te decimos exactamente
+                dónde estás perdiendo pacientes en menos de 10 minutos y sin compromiso.
+            </p>
+
+            <a href="#diagnosis-form" class="btn btn-primary">
+                📩 Quiero saber por qué pierdo pacientes
+            </a>
+
+            <p class="trust-text">
+                🔒 No spam · 📩 Diagnóstico por Instagram DM · ⏱️ Respuesta en menos de 24 horas
+            </p>
+        </div>
+    </header>
+
+    <!-- 2. THE PROBLEM -->
+    <section class="section problem">
+        <div class="container">
+            <h2 class="section-title">¿Te suena familiar?</h2>
+            <div class="problem-list">
+                <div class="problem-item">
+                    <span class="icon">❌</span>
+                    <p>Clínicas que reciben mensajes pero no citas</p>
+                </div>
+                <div class="problem-item">
+                    <span class="icon">❌</span>
+                    <p>Respuestas lentas en Instagram</p>
+                </div>
+                <div class="problem-item">
+                    <span class="icon">❌</span>
+                    <p>Pacientes que preguntan precios y desaparecen</p>
+                </div>
+                <div class="problem-item">
+                    <span class="icon">❌</span>
+                    <p>Agendas con huecos aunque hay interés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. WHAT IS THE DIAGNOSIS -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">¿Qué es el Diagnóstico Gratuito?</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🔍 Qué analizamos</h3>
+                    <p>Revisamos tu perfil de Instagram, cómo respondes los mensajes, tu seguimiento y el proceso de
+                        agendado.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🚫 Qué NO es</h3>
+                    <p>No es una venta disfrazada, no es un curso y no es un contrato de permanencia.</p>
+                </div>
+                <div class="info-card">
+                    <h3>✅ Qué obtienes</h3>
+                    <p>Claridad total sobre dónde se fuga tu dinero y acciones concretas para arreglarlo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. HOW IT WORKS -->
+    <section class="section how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cómo funciona en 3 pasos</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Completa el formulario</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Te escribimos por Instagram DM</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Te explicamos dónde estás perdiendo pacientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FORM SECTION -->
+    <section id="diagnosis-form" class="section form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <p class="form-intro">Completa este breve formulario y te escribiremos directamente por Instagram DM
+                    para hacer el diagnóstico.</p>
+
+                <form id="audit-form">
+                    <div class="form-group">
+                        <label for="name">¿Cómo te llamas?</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagram">Usuario de Instagram</label>
+                        <input type="text" id="instagram" name="instagram" required placeholder="@tuejemplo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clinic">Nombre de tu clínica (opcional)</label>
+                        <input type="text" id="clinic" name="clinic" placeholder="Clínica Dental X">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pain-point">¿Dónde sientes que más se pierden pacientes?</label>
+                        <select id="pain-point" name="pain-point" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="no-respondo">No respondo rápido los DMs</option>
+                            <option value="escriben-no-agendan">Me escriben pero no agendan</option>
+                            <option value="agendan-no-asisten">Agendan y no asisten</option>
+                            <option value="no-lo-se">No lo sé</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-submit">📩 Quiero mi diagnóstico gratuito</button>
+                    <p class="trust-text form-trust">🔒 No spam · 📩 Te escribimos por Instagram · ⏱️ Respuesta en menos
+                        de 24 horas</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SUCCESS MESSAGE (Hidden by default) -->
+    <section id="success-message" class="section success-message hidden">
+        <div class="container">
+            <div class="success-card">
+                <h2>✅ ¡Listo!</h2>
+                <p>En breve te escribiremos por Instagram DM para hacer el diagnóstico.</p>
+                <p>Si no recibes mensaje en 24 horas, puedes escribirnos directamente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SECONDARY CTA -->
+    <footer class="section secondary-cta">
+        <div class="container">
+            <p>¿No estás seguro si esto es para ti? Escríbenos directamente por Instagram y te decimos si podemos
+                ayudarte.</p>
+            <a href="https://instagram.com/" target="_blank" class="btn-secondary">Ir a Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
