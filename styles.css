@@ -276,5 +276,24 @@ select {
 .hero-content {
     animation: fadeUp 0.8s ease-out forwards;
 }
+@keyframes pulseSoft {
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(34,197,94,0); }
+    100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+
+.btn-primary {
+    animation: pulseSoft 3s infinite;
+}
+@keyframes pulseSoft {
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(34,197,94,0); }
+    100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+
+.btn-primary {
+    animation: pulseSoft 3s infinite;
+}
+
 
 
