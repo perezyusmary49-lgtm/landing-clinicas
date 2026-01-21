@@ -200,5 +200,6 @@ footer,
 
 /* ASEGURAR QUE LA ÚLTIMA SECCIÓN NO SE PEGUE AL BORDE */
 .section:last-of-type {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
+
