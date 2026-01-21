@@ -1,4 +1,6 @@
-/* Base Styles */
+/* =========================
+   BASE STYLES
+   ========================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,22 +24,23 @@ body {
     padding: 0 20px;
 }
 
-/* HERO */
+/* =========================
+   HERO (COLOR SÓLIDO)
+   ========================= */
 .hero {
     position: relative;
     min-height: 90vh;
-    background: url("images/banner.jpg") center / cover no-repeat;
+    background-color: #0f172a; /* COLOR SÓLIDO */
     display: flex;
     align-items: center;
 }
 
-/* ❌ Overlay eliminado para que se vea el cover */
-
-/* HERO CONTENT */
 .hero-content {
     position: relative;
     z-index: 2;
     text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 /* LOGO */
@@ -52,15 +55,14 @@ body {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
-    color: #0f172a;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* sutil, profesional */
+    color: #ffffff;
 }
 
 .hero-subtitle {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 28px;
-    color: #374151;
+    color: #e5e7eb;
 }
 
 /* BUTTONS */
@@ -90,10 +92,12 @@ body {
 .trust-text {
     margin-top: 14px;
     font-size: 0.9rem;
-    color: #374151;
+    color: #d1d5db;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+   ========================= */
 .section {
     padding: 80px 0;
 }
@@ -137,7 +141,9 @@ body {
     color: #22c55e;
 }
 
-/* FORM */
+/* =========================
+   FORM
+   ========================= */
 .form-section {
     background-color: #f3f4f6;
 }
@@ -201,7 +207,9 @@ select {
     color: #6b7280;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 .secondary-cta {
     background: #0f172a;
     color: #ffffff;
@@ -219,7 +227,9 @@ select {
     font-weight: 600;
 }
 
-/* UTILS */
+/* =========================
+   UTILS
+   ========================= */
 .hidden {
     display: none;
 }
@@ -234,7 +244,9 @@ select {
     padding: 2rem;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+   ========================= */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2rem;
@@ -243,41 +255,9 @@ select {
     .hero-subtitle {
         font-size: 1rem;
     }
-}
-/* =========================
-   HERO FIX MOBILE
-   ========================= */
-@media (max-width: 768px) {
 
-    .hero {
-        align-items: flex-start;
-        padding-top: 40px;
-    }
-
-    .hero-content {
-        background: rgba(255, 255, 255, 0.92);
-        backdrop-filter: blur(6px);
-        padding: 24px 20px;
-        border-radius: 16px;
-        margin: 0 auto;
-        max-width: 92%;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    }
-
-    .hero-title {
-        font-size: 1.7rem;
-        line-height: 1.25;
-        color: #0f172a;
-        text-shadow: none;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-        color: #374151;
-    }
-
-    .trust-text {
-        color: #4b5563;
+    .btn-primary {
+        width: 100%;
+        text-align: center;
     }
 }
-
