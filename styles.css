@@ -184,3 +184,21 @@ body {
         font-size: 2rem;
     }
 }
+
+/* CORRECCIÓN FINAL DE LANDING — ESPACIO ABAJO */
+body,
+html {
+    min-height: 100%;
+    overflow-x: hidden; /* evita desbordes horizontales no deseados */
+}
+
+/* PIE DE PÁGINA */
+footer,
+.secondary-cta {
+    padding-bottom: 80px; /* espacio debajo del footer */
+}
+
+/* ASEGURAR QUE LA ÚLTIMA SECCIÓN NO SE PEGUE AL BORDE */
+.section:last-of-type {
+    padding-bottom: 100px;
+}
