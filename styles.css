@@ -255,3 +255,26 @@ select {
         font-size: 1rem;
     }
 }
+
+/* =====================
+   MICRO-ANIMACIONES
+===================== */
+
+/* Fade + slide suave */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicación al hero */
+.hero-content {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+
