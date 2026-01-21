@@ -17,18 +17,15 @@ body {
 
 /* CONTAINER */
 .container {
-    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* =====================
-   HERO (FINAL LIMPIO)
-===================== */
+/* HERO */
 .hero {
     min-height: 90vh;
-    background-color: #0f172a; /* Fondo sólido */
+    background-color: #0f172a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,64 +38,60 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* LOGO */
 .logo {
     max-width: 120px;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 
-/* TITULO */
+.brand-kicker {
+    color: #22c55e;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
 .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.25;
-    color: #ffffff;
     margin-bottom: 18px;
+    color: #ffffff;
 }
 
-/* SUBTITULO */
 .hero-subtitle {
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e5e7eb;
     max-width: 640px;
     margin-bottom: 32px;
+    color: #e5e7eb;
 }
 
-/* BOTONES */
+.trust-text {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #d1d5db;
+}
+
+/* BUTTONS */
 .btn {
-    display: inline-block;
-    padding: 14px 28px;
-    border-radius: 10px;
+    padding: 14px 26px;
+    border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.2s ease;
 }
 
 .btn-primary {
     background: #22c55e;
     color: #0f172a;
-    border: none;
-    cursor: pointer;
+    animation: pulseSoft 3s infinite;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(34, 197, 94, 0.35);
 }
 
-/* TEXTO DE CONFIANZA */
-.trust-text {
-    margin-top: 16px;
-    font-size: 0.85rem;
-    color: #cbd5f5;
-}
-
-/* =====================
-   SECCIONES
-===================== */
+/* SECTIONS */
 .section {
     padding: 80px 0;
 }
@@ -109,6 +102,7 @@ body {
     margin-bottom: 40px;
 }
 
+/* GRIDS */
 .problem-list,
 .info-grid,
 .steps {
@@ -122,32 +116,21 @@ body {
 .step {
     background: #f9fafb;
     padding: 24px;
-    border-radius: 14px;
+    border-radius: 12px;
     text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.problem-item .icon {
-    font-size: 2rem;
-    margin-bottom: 12px;
+.problem-item:hover,
+.info-card:hover,
+.step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
-.info-card h3 {
-    margin-bottom: 12px;
-    color: #22c55e;
-}
-
-.step-number {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #22c55e;
-}
-
-/* =====================
-   FORMULARIO
-===================== */
+/* FORM */
 .form-section {
-    background-color: #f3f4f6;
+    background: #f3f4f6;
 }
 
 .form-wrapper {
@@ -155,63 +138,16 @@ body {
     margin: 0 auto;
     background: #ffffff;
     padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .form-intro {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 24px;
 }
 
-.form-group {
-    margin-bottom: 16px;
-}
-
-label {
-    font-weight: 500;
-    display: block;
-    margin-bottom: 6px;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #d1d5db;
-    font-size: 1rem;
-}
-
-.btn-submit {
-    width: 100%;
-    background: #22c55e;
-    color: #0f172a;
-    border: none;
-    cursor: pointer;
-    padding: 14px;
-    font-weight: 600;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-.btn-submit:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
-
-.form-trust {
-    text-align: center;
-    display: block;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: #6b7280;
-}
-
-/* =====================
-   FOOTER CTA
-===================== */
+/* FOOTER */
 .secondary-cta {
     background: #0f172a;
     color: #ffffff;
@@ -221,46 +157,10 @@ select {
 .btn-secondary {
     background: #22c55e;
     color: #0f172a;
-    margin-top: 16px;
-    padding: 14px 28px;
-    border-radius: 10px;
-    font-weight: 600;
-    text-decoration: none;
+    margin-top: 14px;
 }
 
-/* UTILIDADES */
-.hidden {
-    display: none;
-}
-
-.success-message {
-    text-align: center;
-    background-color: #d1fae5;
-    color: #065f46;
-}
-
-.success-card {
-    padding: 2rem;
-}
-
-/* =====================
-   MOBILE
-===================== */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-}
-
-/* =====================
-   MICRO-ANIMACIONES
-===================== */
-
-/* Fade + slide suave */
+/* ANIMATIONS */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -272,41 +172,15 @@ select {
     }
 }
 
-/* Aplicación al hero */
-.hero-content {
-    animation: fadeUp 0.8s ease-out forwards;
-}
 @keyframes pulseSoft {
     0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
-    70% { box-shadow: 0 0 0 12px rgba(34,197,94,0); }
+    70% { box-shadow: 0 0 0 14px rgba(34,197,94,0); }
     100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
 }
 
-.btn-primary {
-    animation: pulseSoft 3s infinite;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
 }
-@keyframes pulseSoft {
-    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
-    70% { box-shadow: 0 0 0 12px rgba(34,197,94,0); }
-    100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
-}
-
-.btn-primary {
-    animation: pulseSoft 3s infinite;
-}
-
-.problem-item,
-.info-card,
-.step {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.problem-item:hover,
-.info-card:hover,
-.step:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-}
-
-
-
